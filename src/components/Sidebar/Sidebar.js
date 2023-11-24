@@ -9,6 +9,8 @@ import {
   faUser,
   faEnvelope,
   faBlog,
+  faDiagramProject,
+  faBrain,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebook,
@@ -32,6 +34,22 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           exact="true"
+          className="skill"
+          activeclassname="active"
+          to={'/skills'}
+        >
+          <FontAwesomeIcon icon={faBrain} color="#4d4d4e"></FontAwesomeIcon>
+        </NavLink>
+        <NavLink
+          exact="true"
+          className="projects"
+          activeclassname="active"
+          to={'/projects'}
+        >
+          <FontAwesomeIcon icon={faDiagramProject}></FontAwesomeIcon>
+        </NavLink>
+        <NavLink
+          exact="true"
           className="about"
           activeclassname="active"
           to={'/about'}
@@ -46,6 +64,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"></FontAwesomeIcon>
         </NavLink>
+
         <NavLink
           exact="true"
           className="blog"

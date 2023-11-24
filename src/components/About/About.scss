@@ -19,10 +19,11 @@
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(24% - 100px);
+  // overflow: hidden;
   div {
     position: absolute;
-    width: 145px;
-    height: 145px;
+    width: 220px;
+    height: 220px;
     padding: 5%;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -30,8 +31,11 @@
     text-align: center;
     font-size: 150px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 0px lightyellow;
+    overflow: hidden;
   }
   .face1 {
     transform: translateZ(100px);

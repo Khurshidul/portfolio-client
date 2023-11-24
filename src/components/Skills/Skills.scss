@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+.skill-page {
+  .text-blog {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    transform: translateY(-50%);
+    width: fit-content;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+
+    h1 {
+      font-size: 53px;
+      font-family: 'Coolvetica';
+      color: #ffd700;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: 10px;
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+      &::after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        bottom: -22px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+  }
+  .text-animate-hover {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.skills {
+  margin: 8% 15%;
+  padding: 0% 2%;
+  box-sizing: border-box;
+  .frontend-title,
+  .backend-title,
+  .language-title,
+  .familiar-title {
+    opacity: 80%;
+    width: fit-content;
+    background: #000000;
+    padding: 5px 10px;
+    line-height: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 2px solid #ffd700;
+    margin: 3rem 0;
+    color: #ffffff;
+  }
+  .frontend-skills,
+  .backend-skills,
+  .language-skills,
+  .familiar-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    .frontend,
+    .backend,
+    .language,
+    .familiar {
+      margin-bottom: 2rem;
+      width: 110px;
+      height: 110px;
+      background: red($color: #000000);
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      h3 {
+        margin-top: 0.5rem;
+        font-size: 18px;
+        color: white;
+      }
+      .bar {
+        background: #353b48;
+        display: block;
+        height: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        span {
+          height: 15px;
+          float: left;
+          background: linear-gradient(
+            135deg,
+            rgb(236, 130, 0) 0%,
+            rgb(255, 255, 0) 100%
+          );
+        }
+        .html {
+          width: 90%;
+          animation: html 3s;
+          @keyframes html {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 90%;
+            }
+          }
+        }
+        .css {
+          width: 70%;
+          animation: css 3s;
+          @keyframes css {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 70%;
+            }
+          }
+        }
+        .react {
+          width: 80%;
+          animation: react 3s;
+          @keyframes react {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 80%;
+            }
+          }
+        }
+        .express {
+          width: 85%;
+          animation: express 3s;
+          @keyframes express {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 85%;
+            }
+          }
+        }
+        .tw {
+          width: 80%;
+          animation: tailwind 3s;
+          @keyframes tailwind {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 80%;
+            }
+          }
+        }
+        .bootstrap {
+          width: 95%;
+          animation: bootstrap 3s;
+          @keyframes bootstrap {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 95%;
+            }
+          }
+        }
+        .mui {
+          width: 85%;
+          animation: mui 3s;
+          @keyframes mui {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 85%;
+            }
+          }
+        }
+        .firebase {
+          width: 65%;
+          animation: firebase 3s;
+          @keyframes firebase {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 65%;
+            }
+          }
+        }
+        .node {
+          width: 75%;
+          animation: node 3s;
+          @keyframes node {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 75%;
+            }
+          }
+        }
+        .mongodb {
+          width: 90%;
+          animation: mongodb 3s;
+          @keyframes mongodb {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 90%;
+            }
+          }
+        }
+        .mysql {
+          width: 50%;
+          animation: mysql 3s;
+          @keyframes mysql {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 50%;
+            }
+          }
+        }
+        .jwt {
+          width: 50%;
+          animation: jwt 3s;
+          @keyframes jwt {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 50%;
+            }
+          }
+        }
+        .cpp {
+          width: 60%;
+          animation: cpp 3s;
+          @keyframes cpp {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 60%;
+            }
+          }
+        }
+        .python {
+          width: 40%;
+          animation: python 3s;
+          @keyframes python {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 40%;
+            }
+          }
+        }
+        .js {
+          width: 80%;
+          animation: js 3s;
+          @keyframes js {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 80%;
+            }
+          }
+        }
+        .ts {
+          width: 80%;
+          animation: ts 3s;
+          @keyframes ts {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 80%;
+            }
+          }
+        }
+        .php {
+          width: 30%;
+          animation: php 3s;
+          @keyframes php {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 30%;
+            }
+          }
+        }
+        .wp {
+          width: 50%;
+          animation: wp 3s;
+          @keyframes wp {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .skill-page {
+    .text-blog {
+      position: absolute;
+      left: 30%;
+      top: 5%;
+      transform: translateY(-50%);
+      width: fit-content;
+      vertical-align: middle;
+      display: table-cell;
+      max-height: 90%;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  .skills {
+    margin: 50% 25%;
+    padding: 0% 2%;
+    box-sizing: border-box;
+    .frontend-title,
+    .backend-title,
+    .language-title,
+    .familiar-title {
+      opacity: 80%;
+      width: 100%;
+      background: #000000;
+      padding: 3px 8px;
+      line-height: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      border-bottom: 2px solid #ffd700;
+      margin: 3rem 0;
+      color: #ffffff;
+    }
+    .frontend-skills,
+    .backend-skills,
+    .language-skills,
+    .familiar-skills {
+      margin: auto;
+      margin-left: 8rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .frontend,
+      .backend,
+      .language,
+      .familiar {
+        margin-bottom: 2rem;
+        width: 100px;
+        height: 100px;
+        background: red($color: #000000);
+      }
+    }
+  }
+}

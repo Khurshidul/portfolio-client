@@ -53,10 +53,7 @@ const Blog = () => {
           </h1>
         </div>
         <div>
-          <SearchBar
-            searchKey={searchKey}
-            setSearchKey={setSearchKey}
-          />
+          <SearchBar searchKey={searchKey} setSearchKey={setSearchKey} />
         </div>
         <div className="blogs">
           {blogs

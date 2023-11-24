@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Home.scss'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
+import profile from '../../assets/images/profile-pic.png'
 import AnimatedLetter from '../AnimatedLetter/AnimatedLetter'
 import Logo from './Logo/Logo'
 import Loader from 'react-loaders'
@@ -71,7 +72,18 @@ const Home = () => {
           </Link>
         </div>
         <Logo />
+        <div className="profile-pic">
+          <div className="content">
+            <img src={profile} alt="" />
+            <h2>
+              I'm a <br /> <span>MERN STACK Developer.</span>
+              <br />
+              <a href="http://localhost:3000/contact"> HIRE ME</a>
+            </h2>
+          </div>
+        </div>
       </div>
+
       <Loader type="pacman" />
     </>
   )
